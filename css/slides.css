@@ -1359,6 +1359,7 @@ p.uppercase, .p.uppercase,
   background: rgba(255, 255, 255, 0.85);
 }
 
+
 .container {
   display: table;
   table-layout: fixed;
@@ -4494,8 +4495,8 @@ html.mobile .showForMobileInline {
 .slides.animateOnEvent.zoom .slide.animate.parallax:not(.video) .background {
   -webkit-transform-origin: center;
           transform-origin: center;
-  -webkit-transform: translate3d(0, 0, 0) scale(1.1);
-          transform: translate3d(0, 0, 0) scale(1.1);
+  -webkit-transform: translate3d(0, 0, 0) scale(1);
+          transform: translate3d(0, 0, 0) scale(1);
 }
 
 .slides.animated.zoom .slide.before.parallax:not(.video) .background,

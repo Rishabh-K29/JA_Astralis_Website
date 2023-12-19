@@ -112,9 +112,6 @@
           <li><a href="index.html">Home Page</a></li>
           <li><a href="dyslexia_simulation.html">Dyslexia</a></li>
           <li><a href="adhd_simulation.html">ADHD</a></li>
-          <li><a href="slide4.html">Dyspraxia</a></li>
-          <li><a href="slide5.html">ASD</a></li>
-          <li><a href="slide6.html">About us</a></li>
         </ul>
       </div>
       <div class="right"><a class="button rectangular khaki gradient" href="#">Our Mission</a><a class="button rectangular blueGray gradient" href="#">Contact us</a></div>
@@ -161,10 +158,10 @@
           <div class="fix-12-12">
             <ul class="grid">
               <li class="col-6-12 left">
-                <h1 class="ae-2 fromLeft">Our Intentions</h1>
-                <p class="ae-3 fromLeft"><span class="opacity-8">Astralis arms players with the ability to empower others and the understanding that SEN students are capable in their own right.</span></p>
+                <h1 class="ae-2 fromLeft" style = "font-family:serif">The Dyslexia Simulation</h1>
+                <p class="ae-3 fromLeft"><span class="opacity-8">Attempt to descramble the hidden sentence shown within the video. Quickest player to descramble the sentence moves 3 spaces forward.</span></p>
                 <ul class="tabs controller uppercase bold ae-4 fromCenter" data-slider-id="60-1">
-                  <li class="selected">Easy</li>
+                  <li class= "selected">Easy</li>
                   <li>Intermediate</li>
                   <li>Advanced</li>
                 </ul>
@@ -173,10 +170,7 @@
                 <ul class="slider animated margin-top-4" data-slider-id="60-1">
                   <li class="selected fromCenter">
                     <div class="popupTrigger videoThumbnail shadow rounded" data-popup-id="60-1">
-                      <img style = 'width:266px' src="assets/img/gallery-60-1.jpg" alt="Video Thumbnail"/>
-                      <img style = 'width:266px' src="assets/img/gallery-60-2.jpg" alt="Video Thumbnail"/>
-                      <img style = 'width:266px' src="assets/img/gallery-60-3.jpg" alt="Video Thumbnail"/>
-                      <img style = 'width:266px' src="assets/img/gallery-60-1.jpg" alt="Video Thumbnail"/>
+                      <img class ="wide" src="assets/img/gallery-60-1.jpg" alt="Video Thumbnail"/>
                     </div>
                   </li>
                   <li class="fromCenter">
@@ -196,58 +190,73 @@
         </div>
       </div>
     </div>
-    <div class="background" style="background-image:url(assets/img/background/img-60.jpg)"></div>
+    <div class="background" style="background-image:url(assets/img/background/dyslexia-bg2.png)"></div>
   </section>
 
 <!-- Popup Video -->
-<div class="popup autoplay" data-popup-id="60-1">
-    <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
+<div class="container">
+  <div class="popup autoplay" data-popup-id="60-1">
+    <div class="close" onclick="togglePopup()">&times;</div>
     <div class="content">
       <div class="container">
         <div class="wrap">
           <div class="fix-10-12">
             <div class="embedVideo popupContent">
-              <iframe src="https://player.vimeo.com/video/101231747?color=ff0179&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <video controls>
+                <source src="assets/Astralis_MP4/Dyslexia-Easy[1].mp4" type="video/mp4">
+              </video>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <button onclick="togglePopup()">Play Video</button>
+</div>
   
   
   <!-- Popup Video -->
+<div class="container">
   <div class="popup autoplay" data-popup-id="60-2">
-    <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
+    <div class="close" onclick="togglePopup()">&times;</div>
     <div class="content">
       <div class="container">
         <div class="wrap">
           <div class="fix-10-12">
             <div class="embedVideo popupContent">
-              <iframe src="https://player.vimeo.com/video/101231747?color=ff0179&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <video controls>
+                <source src="assets/Astralis_MP4/Dyslexia-Easy[2].mp4" type="video/mp4">
+              </video>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <button onclick="togglePopup()">Play Video</button>
+</div>
   
   
   <!-- Popup Video -->
+<div class="container">
   <div class="popup autoplay" data-popup-id="60-3">
-    <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
+    <div class="close" onclick="togglePopup()">&times;</div>
     <div class="content">
       <div class="container">
         <div class="wrap">
           <div class="fix-10-12">
             <div class="embedVideo popupContent">
-              <iframe src="https://player.vimeo.com/video/101231747?color=ff0179&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <video controls>
+                <source src="assets/Astralis_MP4/Dyslexia-Easy[3].mp4" type="video/mp4">
+              </video>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <button onclick="togglePopup()">Play Video</button>
+</div>
   
   
 <!-- Panel Bottom #01 -->
