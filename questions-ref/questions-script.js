@@ -3,23 +3,18 @@ const arr = [1,2,3,4,5,6]
 const questions = [
     { 
         id: '1',
-        questionText: 'Who is Aidan Ma interested in',
-        answerText: 'Dr Ray'
+        questionText: 'Type the unscrambled sentence below. (Keep in mind capital letters and proper punctuation)',
+        answerText: 'The dog playfully chased the ball.'
     },
     { 
         id: '2',
-        questionText: 'Where did Rishabh go?',
-        answerText: 'Malaysia'
+        questionText: 'Type the unscrambled sentence below. (Keep in mind capital letters and proper punctuation)',
+        answerText: 'The flowers bloomed beautifully in the garden.'
     },
     { 
         id: '3',
-        questionText: 'Where is India?',
-        answerText: 'Asia'
-    },
-    { 
-        id: '4',
-        questionText: 'Where do you eat curry',
-        answerText: 'India'
+        questionText: 'Type the unscrambled sentence below. (Keep in mind capital letters and proper punctuation)',
+        answerText: 'The sun is shining brightly in the clear blue sky.'
     },
 ]
 
@@ -83,5 +78,5 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   function answerIncorrect(question) { // @ RISHABH put what u want with answer wrong here
-    console.log('answer correct');
+    console.log('answer incorrect');
   }

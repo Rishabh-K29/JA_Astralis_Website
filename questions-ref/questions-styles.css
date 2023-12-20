@@ -26,7 +26,7 @@
   left: 50%;
   width: 800px;
   height: 300px;
-  background-color: white;
+  background-color: rgb(160, 175, 185);
   display: none;
   
   z-index: 9999;
@@ -51,6 +51,7 @@
 #question {
   font-size: 24px;
   margin-bottom: 10px;
+  color: black;
 }
 
 #answer-input {
