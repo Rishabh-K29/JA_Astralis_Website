@@ -1,9 +1,9 @@
-const arr = [1, 2,3,4, 5, 6]
+const arr = [1,2,3,4,5,6]
  
 const questions = [
     { 
         id: '1',
-        questionText: 'Who is Aidan Ma interested in sdfjsdakfdsflkdshfkjdsajofisdguhjfbkndsifguydshjfkdfugyfsdhjbk',
+        questionText: 'Who is Aidan Ma interested in',
         answerText: 'Dr Ray'
     },
     { 
@@ -25,7 +25,7 @@ const questions = [
 
 
 window.addEventListener('DOMContentLoaded', () => {
-    const videos = document.querySelectorAll('.video');
+    const videos = document.querySelectorAll('.question-video');
     console.log(videos);
 
     videos.forEach((video, index) => {
