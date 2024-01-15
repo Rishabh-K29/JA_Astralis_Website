@@ -1,4 +1,4 @@
-const arr = [1,2,3,4,5,6]
+const arr = [1,2,3,4,5,6,7,8,9,10,11,12]
  
 const questions = [
     { 
@@ -16,6 +16,21 @@ const questions = [
         questionText: 'Type the unscrambled sentence below. (Keep in mind capital letters and proper punctuation)',
         answerText: 'The sun is shining brightly in the clear blue sky.'
     },
+    { 
+        id: '4',
+        questionText: 'Rewrite the sentence displayed in red. (Keep in mind capital letters and proper punctuation)',
+        answerText: 'Childhood memories bring immense joy.'
+  },
+  { 
+        id: '5',
+        questionText: 'Rewrite the sentence displayed in red. (Keep in mind capital letters and proper punctuation)',
+        answerText: 'The flowers bloomed beautifully in the garden.'
+  },
+  { 
+        id: '6',
+        questionText: 'Rewrite the sentence displayed in cursive font. (Keep in mind capital letters and proper punctuation)',
+        answerText: 'Last weekend, we had a wonderful time at the park, enjoying picnics and playing games.'
+  },
 ]
 
 
@@ -57,7 +72,8 @@ window.addEventListener('DOMContentLoaded', () => {
   submitButton.addEventListener('click', () => {
     const answer = answerInput.value;
     processAnswer(currentQID, answer);
-  });
+    popupContainer.style.display = 'none';
+  })
   
   closeButton.addEventListener('click', () => {
     closePopup();
@@ -73,9 +89,34 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  function answerCorrect(question) { // @ RISHABH put what u want with answer correct here, if its different per question then switch case it
-    console.log('answer correct')
-  }
+  function answerCorrect(question) {
+    var defaults = {
+      spread: 360,
+      ticks: 100,
+      gravity: 0.35,
+      decay: 0.94,
+      startVelocity: 20,
+      colors: ['FFE400', 'FFBD00', 'E89400', 'FFCA6C', 'FDFFB8']
+      };
+    function shoot() {
+      confetti({
+        ...defaults,
+        particleCount: 40,
+        scalar: 1.2,
+        shapes: ['star']
+        });
+      confetti({
+        ...defaults,
+        particleCount: 10,
+        scalar: 0.75,
+        shapes: ['circle']
+        });
+        }
+        setTimeout(shoot, 0);
+        setTimeout(shoot, 100);
+        setTimeout(shoot, 200);
+        setTimeout(shoot, 300);
+        };
 
   function answerIncorrect(question) { // @ RISHABH put what u want with answer wrong here
     console.log('answer incorrect');

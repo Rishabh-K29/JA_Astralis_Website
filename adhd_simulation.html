@@ -26,6 +26,9 @@
 	<!-- Fonts and Material Icons -->
 	<link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700|Material+Icons"/>
  
+  <!-- Question Reference -->
+  <link href="questions-ref/questions-styles.css" rel="stylesheet" type="text/css">
+
 </head>
 <body class="slides horizontal simplifiedMobile animated">
 		
@@ -153,53 +156,125 @@
     </div>
   </nav>
 
-<!-- Slide 3 (#27) -->
-<section class="slide fade-6 kenBurns">
-    <div class="content">
-      <div class="container">
-        <div class="wrap">
-          
+<!-- ADHD Simulation Page-->
+<section class="slide fade-3 kenBurns"> <!-- bg brightness [-3] and transition -->
+    <div class="content"> 
+      <div class="container"> 
+        <div class="wrap"> 
           <div class="fix-12-12">
-            <ul class="flex verticalCenter">
-              <li class="col-5-12 cell-27">
-                <div class="fix-4-12">
-                  <ul class="slider clickable ae-1 fromAbove" data-slider-id="27-2">
-                    <li class="selected"><img src="assets/img/watch-26-2.png" alt="Apple Watch Thumbnail"/></li>
-                    <li><img src="assets/img/watch-26-1.png" alt="Apple Watch Thumbnail"/></li>
-                    <li><img src="assets/img/watch-26-2.png" alt="Apple Watch Thumbnail"/></li>
-                    <li><img src="assets/img/watch-26-1.png" alt="Apple Watch Thumbnail"/></li>
-                  </ul>
-                  <ul class="controller dots ae-2 fromCenter margin-top-3" data-slider-id="27-2">
-                    <li class="dot selected"></li>
-                    <li class="dot"></li>
-                    <li class="dot"></li>
-                    <li class="dot"></li>
-                  </ul>
-                </div>
+            <ul class="grid">
+              <li class="col-6-12 left">
+                <h1 class="ae-2 fromLeft" style = "font-family:serif">The ADHD Simulation</h1>
+                <p class="ae-3 fromLeft"><span class="opacity-8">Pay attention to the five sentences shown on screen. A question will be asked regarding one of the sentences. Quickest player to answer moves 3 spaces forward, second moves 2 spaces. </span></p>
+                <ul class="tabs controller uppercase bold ae-4 fromCenter" data-slider-id="60-1">
+                  <li class= "selected">ID 1</li>
+                  <li>ID 2</li>
+                  <li>ID 3</li>
+                </ul>
               </li>
-              <li class="col-7-12 left">
-                <h1 class="ae-2 fromRight">Creativity, Stimulation, Engagement</h1>
-                <div class="ae-3 fromRight">
-                  <p class="opacity-8">Through an engaging sensory based board game, players progress by overcoming analytical and drawing simulations which aim to effectively snapshot a portion of an SEN. </p>
-                </div>
-                <div class="relative">
-                  <img src="assets/img/icon-2.png" class="ae-3 fromCenter app-26" alt="app"/>
-                  <div class="text-26">
-                    <h3 class="ae-3 fromRight">SEN: 11% of the Population</h3>
-                    <div class="ae-5 fromRight">
-                      <p class="tiny opacity-6">People aren't aware of the<br>stars hiding in the dark.</p>
+              <li class="col-6-12 left ae-5 fromCenter">
+                <ul class="slider animated margin-top-4" data-slider-id="60-1">
+                  <li class="selected fromCenter">
+                    <div class="popupTrigger videoThumbnail shadow rounded" data-popup-id="60-1">
+                      <img class ="wide" src="assets/img/gallery-60-1.jpg" alt="Video Thumbnail"/>
                     </div>
-                  </div>
-                </div>
+                  </li>
+                  <li class="fromCenter">
+                    <div class="popupTrigger videoThumbnail shadow rounded" data-popup-id="60-2">
+                      <img class="wide" src="assets/img/gallery-60-2.jpg" alt="Video Thumbnail"/>
+                    </div>
+                  </li>
+                  <li class="fromCenter">
+                    <div class="popupTrigger videoThumbnail shadow rounded" data-popup-id="60-3">
+                      <img class="wide" src="assets/img/gallery-60-3.jpg" alt="Video Thumbnail"/>
+                    </div>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
-          
         </div>
       </div>
     </div>
-    <div class="background" style="background-image:url(assets/img/background/img-27.jpg)"></div>
+    <div class="background" style="background-image:url(assets/img/background/mainbg2.png)"></div>
   </section>
+
+<!-- Id 4 video -->
+<div class="container">
+  <div class="popup autoplay" data-popup-id="60-1">
+    <div class="close" onclick="togglePopup()">&times;</div>
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="fix-10-12">
+            <div class="embedVideo popupContent">
+              <video id="4" class="question-video" controls>
+                <source src="assets/Astralis_MP4/ADHD_P1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <!-- Id 5 video -->
+<div class="container">
+  <div class="popup autoplay" data-popup-id="60-2">
+    <div class="close" onclick="togglePopup()">&times;</div>
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="fix-10-12">
+            <div class="embedVideo popupContent">
+              <video id="5" class="question-video" controls>
+                <source src="assets/Astralis_MP4/ADHD_P2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+  <!-- Id 6 video -->
+<div class="container">
+  <div class="popup autoplay" data-popup-id="60-3">
+    <div class="close" onclick="togglePopup()">&times;</div>
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="fix-10-12">
+            <div class="embedVideo popupContent">
+              <video id="6" class="question-video" controls>
+                <source src="assets/Astralis_MP4/ADHD_P3.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div id="popup-container">
+      <div id="question"><p>Question goes here</p></div>
+      <div id="input-container">
+          <input type="text" id="answer-input" placeholder="Enter your answer">
+          <div class="button-container">
+              <a class="button rectangular blueGray gradient" id="submit-btn">Submit Answer</a>
+              <a class="button rectangular khaki gradient" id="close-btn">Close Popup</a>
+          </div>
+    </div>
+  </div>
+<script src="questions-ref/questions-script.js"></script>
+
+
 
 <!-- Panel Bottom #01 -->
 <nav class="panel bottom forceMobileView">

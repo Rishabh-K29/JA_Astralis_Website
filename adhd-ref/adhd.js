@@ -17,7 +17,7 @@ function onDOMContentLoaded() {
 
 function applyRandomStyles(element) {
     // list of styles: font, color, size range
-    const fonts = ['Arial', 'Helvetica', 'Verdana', 'Times New Roman', 'Courier New', 'Impact', 'Geneva', 'Franklin Gothic Medium'];
+    const fonts = ['Arial', 'Helvetica', 'Verdana', 'Times New Roman', 'Courier New', 'Impact', 'Geneva', 'Franklin Gothic Medium', 'Cursive'];
     const minSize = 10;
     const maxSize = 36;
 
