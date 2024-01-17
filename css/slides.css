@@ -5445,6 +5445,59 @@ body {
   fill: #FF5722 !important;
 }
 
+.AstYellow {
+  background: #f6dea8 !important;
+  color: #fff !important;
+}
+.AstYellow svg {
+  fill: #fff !important;
+}
+
+.text-AstYellow {
+  color: #f6dea8 !important;
+}
+.text-AstYellow.button svg {
+  fill: #f6dea8 !important;
+}
+
+.stroke.button.AstYellow {
+  color: #f6dea8 !important;
+  border-color: #f6dea8 !important;
+}
+.stroke.button.AstYellow svg {
+  fill: #f6dea8 !important;
+}
+
+
+.AstBlue {
+  background: #a0afb9 !important;
+  color: #fff !important;
+}
+.AstBlue svg {
+  fill: #fff !important;
+}
+
+.text-AstBlue {
+  color: #a0afb9 !important;
+}
+.text-AstBlue.button svg {
+  fill: #a0afb9 !important;
+}
+
+.stroke.button.AstBlue {
+  color: #a0afb9 !important;
+  border-color: #a0afb9 !important;
+}
+.stroke.button.AstBlue svg {
+  fill: #a0afb9 !important;
+}
+
+
+
+
+
+
+
 .brown {
   background: #795548 !important;
   color: #fff !important;

@@ -72,11 +72,13 @@ window.addEventListener('DOMContentLoaded', () => {
   submitButton.addEventListener('click', () => {
     const answer = answerInput.value;
     processAnswer(currentQID, answer);
-    popupContainer.style.display = 'none';
+    closePopup()
+    answerInput.value = null
   })
   
   closeButton.addEventListener('click', () => {
     closePopup();
+    answerInput.value = null
   });
 
   function processAnswer(questionId, answer) {
@@ -93,7 +95,7 @@ window.addEventListener('DOMContentLoaded', () => {
     var defaults = {
       spread: 360,
       ticks: 100,
-      gravity: 0.35,
+      gravity: 0.4,
       decay: 0.94,
       startVelocity: 20,
       colors: ['FFE400', 'FFBD00', 'E89400', 'FFCA6C', 'FDFFB8']
@@ -101,13 +103,13 @@ window.addEventListener('DOMContentLoaded', () => {
     function shoot() {
       confetti({
         ...defaults,
-        particleCount: 40,
+        particleCount: 80,
         scalar: 1.2,
         shapes: ['star']
         });
       confetti({
         ...defaults,
-        particleCount: 10,
+        particleCount: 20,
         scalar: 0.75,
         shapes: ['circle']
         });
@@ -118,6 +120,6 @@ window.addEventListener('DOMContentLoaded', () => {
         setTimeout(shoot, 300);
         };
 
-  function answerIncorrect(question) { // @ RISHABH put what u want with answer wrong here
-    console.log('answer incorrect');
+  function answerIncorrect(question) {
+
   }
