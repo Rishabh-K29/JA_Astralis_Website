@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+    <title>Flying text animation</title>
+    <style type="text/css">
+        body{
+            background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)), url(assets/img/background/mainbg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+            text-align: center;
+            width: 100vw;
+            font-weight:700;
+            overflow:hidden;
+            font-family: 'lato', sans-serif;
+        }
+        .content{
+            font-size: 4em;
+            margin: 40vh auto;
+            height:20vh;
+            text-transform:uppercase;
+        }
+
+        .content div{
+            position: fixed;
+            margin: 2vh 0; 
+            opacity: 0; 
+            width: 100vw; 
+            animation: animate1 32s linear infinite;
+        }
+        .content span {
+            position: fixed;
+            margin: 2vh 0; 
+            opacity: 0; 
+            width: 100vw; 
+            animation: animate2 32s linear infinite;
+        }
+        .content div:nth-child(2){animation-delay: 4s;}
+        .content div:nth-child(3){animation-delay: 8s;}
+        .content div:nth-child(4){animation-delay: 12s;}
+        .content div:nth-child(5){animation-delay: 16s;}
+        .content div:nth-child(6){animation-delay: 20s;}
+        .content div:nth-child(7){animation-delay: 24s;}
+        .content div:nth-child(8){animation-delay: 28s;}
+
+        @keyframes animate1{
+            0%{opacity:0; filter: blur(20px); transform: scale(12);}
+            3%{opacity:1; filter: blur(0px); transform: scale(1);}
+            10%{opacity:1; filter: blur(0px); transform: scale(0.9);}
+            13%{opacity:0; filter: blur(10px); transform: scale(0.1);}
+            80%{opacity:0}
+            100%{opacity:0}
+        }        
+        @keyframes animate2{
+            0%{opacity:0; filter: blur(20px); transform: scale(12);}
+            3%{opacity:1; filter: blur(0px); transform: scale(1);}
+            10%{opacity:1; filter: blur(0px); transform: scale(0.9);}
+        }        
+        </style>
+
+</head>
+<body>
+<div class ="content">
+    <div>Nice Try!</div>
+    <div><span>This is how an individual with dyslexia can spend their day reading text. </span></div>
+</div>
+</body>
+</html>

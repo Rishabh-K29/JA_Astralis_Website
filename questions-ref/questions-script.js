@@ -120,6 +120,10 @@ window.addEventListener('DOMContentLoaded', () => {
         setTimeout(shoot, 300);
         };
 
-  function answerIncorrect(question) {
 
+
+  function answerIncorrect(question) {
+    var defaults = {
+      
+    }
   }

@@ -3,7 +3,7 @@ import time
 import sys
 from termcolor import colored, cprint
 
-text = "那隻狗開心地追著球跑。"
+text = "The dog playfully chased the ball."
 original_text = text
 
 lineup = '\033[1A'
@@ -31,12 +31,14 @@ def scrambler(a):
         scrambled_words = (''.join(shuffled_list))
         scrambled_list += [scrambled_words]
     #print(scrambled_list)
-    scrambled_sentence = colored(' '.join(scrambled_list),'light_yellow')
-    print(colored("Scrambled Text: ",'red') + scrambled_sentence,end = "\r")
-    time.sleep(4)
+    scrambled_sentence = colored(' '.join(scrambled_list),'white')
+    print("                  " + str(scrambled_sentence),end = "\r")
+    time.sleep(3)
+
 
 print('', end = '\n')
-
-for i in range(10):
+print('', end = '\n')
+for i in range(20):
     scrambler(text)
 
+print("                                                                                                          ")
