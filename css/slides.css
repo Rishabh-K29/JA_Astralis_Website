@@ -923,8 +923,8 @@ p.uppercase, .p.uppercase,
   border-radius: 0 0 4px 4px;
 }
 .tabs li.selected {
-  background: #fff;
-  color: #202020;
+  background: #202020;
+  color: #fff;
 }
 
 .slide.whiteSlide .tabs li {
@@ -932,9 +932,9 @@ p.uppercase, .p.uppercase,
   color: #202020;
 }
 .slide.whiteSlide .tabs li.selected {
-  background: #202020;
-  border-color: #202020;
-  color: #fff;
+  background: #fff;
+  border-color: #fff;
+  color: #202020;
 }
 
 .links li {
