@@ -3,17 +3,17 @@ const arr = [1,2,3,4,5,6,7,8,9,10,11,12]
 const questions = [
     { 
         id: '1',
-        questionText: 'Type the unscrambled sentence below. (Keep in mind capital letters and proper punctuation)',
+        questionText: 'Rewrite the unscrambled sentence below. (Keep in mind capital letters and proper punctuation)',
         answerText: 'The dog playfully chased the ball.'
     },
     { 
         id: '2',
-        questionText: 'Type the unscrambled sentence below. (Keep in mind capital letters and proper punctuation)',
+        questionText: 'Rewrite the unscrambled sentence below. (Keep in mind capital letters and proper punctuation)',
         answerText: 'The flowers bloomed beautifully in the garden.'
     },
     { 
         id: '3',
-        questionText: 'Type the unscrambled sentence below. (Keep in mind capital letters and proper punctuation)',
+        questionText: 'Rewrite the unscrambled sentence below. (Keep in mind capital letters and proper punctuation)',
         answerText: 'The sun is shining brightly in the clear blue sky.'
     },
     { 
