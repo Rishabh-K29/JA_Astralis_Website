@@ -34,6 +34,10 @@ const questions = [
 ]
 
 
+
+window.addEventListener('DOMContentLoaded', closePopup());
+
+
 window.addEventListener('DOMContentLoaded', () => {
     const videos = document.querySelectorAll('.question-video');
     console.log(videos);
@@ -123,7 +127,4 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
   function answerIncorrect(question) {
-    var defaults = {
-      
-    }
   }
