@@ -158,9 +158,9 @@
                 <h1 class="ae-2 fromLeft" style = "font-family:serif">The Dyslexia Simulation</h1>
                 <p class=" ae-3 fromLeft"><span class="opacity-9">Attempt to descramble the hidden sentence shown within the video. Quickest player to descramble the sentence moves 3 spaces forward.</span></p>
                 <ul class="tabs controller uppercase bold ae-4 fromCenter" data-slider-id="60-1">
-                  <li class= "selected">Easy</li>
-                  <li>Intermediate</li>
-                  <li>Advanced</li>
+                  <li class= "selected">Game 1 (Easy)</li>
+                  <li>Game 2 (Easy)</li>
+                  <li>Game 3 (Intermediate)</li>
                 </ul>
               </li>
               <li class="col-6-12 left ae-5 fromCenter">
@@ -190,70 +190,6 @@
     <div class="background" style="background-image:url(assets/img/background/mainbg.png)"></div>
   </section>
 
-<!-- Easy Popup Video -->
-<div class="video-container">
-  <div class="popup autoplay" data-popup-id="60-1">
-    <div class="close" onclick="togglePopup()">&times;</div>
-    <div class="content">
-      <div class="container">
-        <div class="wrap">
-          <div class="fix-10-12">
-            <div class="embedVideo popupContent rounded">
-              <video id="1" class="question-video" controls>
-                <source src="assets/Astralis_MP4/JA_DYS_1_FINAL.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-  
-  <!-- Intermediate Popup Video -->
-<div class="video-container">
-  <div class="popup autoplay" data-popup-id="60-2">
-    <div class="close" onclick="togglePopup()">&times;</div>
-    <div class="content">
-      <div class="container">
-        <div class="wrap">
-          <div class="fix-10-12">
-            <div class="embedVideo popupContent">
-              <video id="2" class="question-video" controls>
-                <source src="assets/Astralis_MP4/Dyslexia-Easy[2].mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-  
-  
-  <!-- Advanced Popup Video -->
-<div class="video-container">
-  <div class="popup autoplay" data-popup-id="60-3">
-    <div class="close" onclick="togglePopup()">&times;</div>
-    <div class="content">
-      <div class="container">
-        <div class="wrap">
-          <div class="fix-10-12">
-            <div class="embedVideo popupContent">
-              <video id="3" class="question-video" controls>
-                <source src="assets/Astralis_MP4/Dyslexia-Easy[3].mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 <div id="popup-container">
   <div id="question"><p>Type the unscrambled sentence below. (Keep in mind capital letters and proper punctuation)</p></div>
     <div id="input-container">
@@ -267,13 +203,78 @@
   </div>
 <script src="questions-ref/questions-script.js"></script>
 
-<script>
+
+<!-- Easy (1) Popup Video -->
+<div class="video-container">
+  <div class="popup autoplay" data-popup-id="60-1">
+    <div class="close" onclick="togglePopup()">&times;</div>
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="fix-10-12">
+            <div class="embedVideo popupContent rounded">
+              <video id="1" class="question-video" controls>
+                <source src="assets/Astralis_MP4/JA_Dyslexia_Easy_1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <!-- Intermediate (1) Popup Video -->
+<div class="video-container">
+  <div class="popup autoplay" data-popup-id="60-2">
+    <div class="close" onclick="togglePopup()">&times;</div>
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="fix-10-12">
+            <div class="embedVideo popupContent">
+              <video id="2" class="question-video" controls>
+                <source src="assets/Astralis_MP4/JA_Dyslexia_Intermediate_1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+  <!-- Advanced (1) Popup Video -->
+<div class="video-container">
+  <div class="popup autoplay" data-popup-id="60-3">
+    <div class="close" onclick="togglePopup()">&times;</div>
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="fix-10-12">
+            <div class="embedVideo popupContent">
+              <video id="3" class="question-video" controls>
+                <source src="assets/Astralis_MP4/JA_Dyslexia_Advanced_1.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--- <script>
   function closePopup() {
     popupContainer.style.display = 'none'; // hide the popup
   }
 
   closePopup()
- </script>
+ </script> -->
 
 <!-- Panel Bottom #01 -->
 <nav class="panel bottom forceMobileView">

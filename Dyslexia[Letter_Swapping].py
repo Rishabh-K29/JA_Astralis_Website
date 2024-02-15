@@ -3,7 +3,7 @@ import time
 import sys
 from termcolor import colored, cprint
 
-text = "The dog playfully chased the ball."
+text = "The sun is shining brightly in the clear blue sky."
 original_text = text
 
 lineup = '\033[1A'
