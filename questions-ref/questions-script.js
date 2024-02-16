@@ -7,30 +7,45 @@ const questions = [
         answerText: 'The dog playfully chased the ball.'
     },
     { 
-        id: '2',
-        questionText: 'Rewrite the unscrambled sentence below. (Keep in mind capital letters and proper punctuation)',
-        answerText: 'The flowers bloomed beautifully in the garden.'
+      id: '2',
+      questionText: 'Rewrite the unscrambled sentence below. (Keep in mind capital letters and proper punctuation)',
+      answerText: ''
     },
     { 
         id: '3',
         questionText: 'Rewrite the unscrambled sentence below. (Keep in mind capital letters and proper punctuation)',
+        answerText: 'The flowers bloomed beautifully in the garden.'
+    },
+    { 
+      id: '4',
+      questionText: 'Rewrite the unscrambled sentence below. (Keep in mind capital letters and proper punctuation)',
+      answerText: ''
+    },
+    { 
+        id: '5',
+        questionText: 'Rewrite the unscrambled sentence below. (Keep in mind capital letters and proper punctuation)',
         answerText: 'The sun is shining brightly in the clear blue sky.'
     },
     { 
-        id: '4',
+      id: '6',
+      questionText: 'Rewrite the unscrambled sentence below. (Keep in mind capital letters and proper punctuation)',
+      answerText: ''
+    },
+    { 
+        id: '7',
         questionText: 'Rewrite the sentence displayed in red. (Keep in mind capital letters and proper punctuation)',
         answerText: 'Childhood memories bring immense joy.'
-  },
-  { 
-        id: '5',
+    },
+    { 
+        id: '8',
         questionText: 'Rewrite the sentence displayed in red. (Keep in mind capital letters and proper punctuation)',
         answerText: 'The flowers bloomed beautifully in the garden.'
-  },
-  { 
-        id: '6',
+    },
+    { 
+        id: '9',
         questionText: 'Rewrite the sentence displayed in cursive font. (Keep in mind capital letters and proper punctuation)',
         answerText: 'Last weekend, we had a wonderful time at the park, enjoying picnics and playing games.'
-  },
+    },
 ]
 
 

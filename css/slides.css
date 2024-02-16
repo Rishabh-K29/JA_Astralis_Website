@@ -5040,7 +5040,7 @@ body {
 /* Colors */
 .white {
   background: #fff !important;
-  color: #202020 !important;
+  color: #000000 !important;
 }
 .white svg {
   fill: #202020 !important;
@@ -5455,7 +5455,7 @@ body {
 
 .AstYellow {
   background: #f6dea8 !important;
-  color: #fff !important;
+  color: #000000 !important;
 }
 .AstYellow svg {
   fill: #fff !important;
@@ -5479,7 +5479,7 @@ body {
 
 .AstBlue {
   background: #a0afb9 !important;
-  color: #fff !important;
+  color: #000000 !important;
 }
 .AstBlue svg {
   fill: #fff !important;

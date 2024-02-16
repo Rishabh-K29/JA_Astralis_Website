@@ -161,6 +161,9 @@
                   <li class= "selected">Game 1 (Easy)</li>
                   <li>Game 2 (Easy)</li>
                   <li>Game 3 (Intermediate)</li>
+                  <li>Game 4 (Intermediate)</li>
+                  <li>Game 5 (Advanced)</li>
+                  <li>Game 6 (Advanced)</li>
                 </ul>
               </li>
               <li class="col-6-12 left ae-5 fromCenter">
@@ -180,6 +183,21 @@
                       <img class="wide" src="assets/Astralis_Thumbnails/5-min.png" alt="Video Thumbnail"/>
                     </div>
                   </li>
+                  <li class="fromCenter">
+                    <div class="popupTrigger videoThumbnail rounded" data-popup-id="60-4">
+                      <img class="wide" src="assets/Astralis_Thumbnails/" alt="Video Thumbnail"/>
+                    </div>
+                  </li>
+                  <li class="fromCenter">
+                    <div class="popupTrigger videoThumbnail rounded" data-popup-id="60-5">
+                      <img class="wide" src="assets/Astralis_Thumbnails/" alt="Video Thumbnail"/>
+                    </div>
+                  </li>
+                  <li class="fromCenter">
+                    <div class="popupTrigger videoThumbnail rounded" data-popup-id="60-6">
+                      <img class="wide" src="assets/Astralis_Thumbnails/" alt="Video Thumbnail"/>
+                    </div>
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -190,16 +208,14 @@
     <div class="background" style="background-image:url(assets/img/background/mainbg.png)"></div>
   </section>
 
-
-
 <div id="popup-container">
   <div id="question"><p>Type the unscrambled sentence below. (Keep in mind capital letters and proper punctuation)</p></div>
     <div id="input-container">
           <input type="text" id="answer-input" placeholder="Enter your answer">
           <div class="button-container">
-              <a class="button rectangular AstBlue gradient" id="submit-btn">Submit Answer</a>
+              <a class="button rounded AstBlue gradient" id="submit-btn">Submit Answer</a>
               <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
-              <a class="button rectangular AstYellow gradient" id="close-btn">Close Popup</a>
+              <a class="button rounded AstYellow gradient" id="close-btn">Close Popup</a>
           </div>
     </div>
   </div>
@@ -207,7 +223,7 @@
 <div id="horizontal-popup-container">
   <div id="question"><p>Turn your device horizontally for best experience</p></div>
     <div class = "button-container">
-      <a onclick = "closePopupHorizontal()" class="button rectangular AstBlue gradient">Close Popup</a>
+      <a onclick = "closePopupHorizontal()" class="button rounded AstBlue gradient">Close Popup</a>
     </div>
 </div>
 <script src="questions-ref/questions-script.js"></script>
@@ -233,7 +249,7 @@
   </div>
 </div>
   
-  <!-- Intermediate (1) Popup Video -->
+<!-- Easy (2) Popup Video -->
 <div class="video-container">
   <div class="popup autoplay" data-popup-id="60-2">
     <div class="close" onclick="togglePopup()">&times;</div>
@@ -241,8 +257,51 @@
       <div class="container">
         <div class="wrap">
           <div class="fix-10-12">
-            <div class="embedVideo popupContent">
+            <div class="embedVideo popupContent rounded">
               <video id="2" class="question-video" controls>
+                <source src="assets/Astralis_MP4/JA_Dyslexia_Easy_1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Intermediate (1) Popup Video -->
+<div class="video-container">
+  <div class="popup autoplay" data-popup-id="60-3">
+    <div class="close" onclick="togglePopup()">&times;</div>
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="fix-10-12">
+            <div class="embedVideo popupContent">
+              <video id="3" class="question-video" controls>
+                <source src="assets/Astralis_MP4/JA_Dyslexia_Intermediate_1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Intermediate (2) Popup Video -->
+<div class="video-container">
+  <div class="popup autoplay" data-popup-id="60-4">
+    <div class="close" onclick="togglePopup()">&times;</div>
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="fix-10-12">
+            <div class="embedVideo popupContent">
+              <video id="4" class="question-video" controls>
                 <source src="assets/Astralis_MP4/JA_Dyslexia_Intermediate_1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
@@ -254,17 +313,36 @@
   </div>
 </div>
   
-  
   <!-- Advanced (1) Popup Video -->
 <div class="video-container">
-  <div class="popup autoplay" data-popup-id="60-3">
+  <div class="popup autoplay" data-popup-id="60-5">
     <div class="close" onclick="togglePopup()">&times;</div>
     <div class="content">
       <div class="container">
         <div class="wrap">
           <div class="fix-10-12">
             <div class="embedVideo popupContent">
-              <video id="3" class="question-video" controls>
+              <video id="5" class="question-video" controls>
+                <source src="assets/Astralis_MP4/JA_Dyslexia_Advanced_1.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Advanced (2) Popup Video -->
+<div class="video-container">
+  <div class="popup autoplay" data-popup-id="60-6">
+    <div class="close" onclick="togglePopup()">&times;</div>
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="fix-10-12">
+            <div class="embedVideo popupContent">
+              <video id="6" class="question-video" controls>
                 <source src="assets/Astralis_MP4/JA_Dyslexia_Advanced_1.mp4" type="video/mp4">
               </video>
             </div>
