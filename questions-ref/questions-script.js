@@ -52,6 +52,7 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   const popupContainer = document.getElementById('popup-container');
+  const horizontalPopupContainer = document.getElementById('horizontal-popup-container')
   const questionElement = document.getElementById('question');
   const answerInput = document.getElementById('answer-input');
   const submitButton = document.getElementById('submit-btn');

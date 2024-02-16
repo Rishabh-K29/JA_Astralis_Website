@@ -190,6 +190,8 @@
     <div class="background" style="background-image:url(assets/img/background/mainbg.png)"></div>
   </section>
 
+
+
 <div id="popup-container">
   <div id="question"><p>Type the unscrambled sentence below. (Keep in mind capital letters and proper punctuation)</p></div>
     <div id="input-container">
@@ -201,8 +203,14 @@
           </div>
     </div>
   </div>
-<script src="questions-ref/questions-script.js"></script>
 
+<div id="horizontal-popup-container">
+  <div id="question"><p>Turn your device horizontally for best experience</p></div>
+    <div class = "button-container">
+      <a onclick = "closePopupHorizontal()" class="button rectangular AstBlue gradient">Close Popup</a>
+    </div>
+</div>
+<script src="questions-ref/questions-script.js"></script>
 
 <!-- Easy (1) Popup Video -->
 <div class="video-container">
@@ -267,14 +275,22 @@
   </div>
 </div>
 
+<script>
+  function closePopupHorizontal() {
+    horizontalPopupContainer.style.display = 'none';
+  }
+ </script> 
+
+
 
 <script>
   function closePopup() {
-    popupContainer.style.display = 'none'; // hide the popup
+    popupContainer.style.display = 'none'; 
   }
 
   closePopup()
  </script> 
+ 
 
 <!-- Panel Bottom #01 -->
 <nav class="panel bottom forceMobileView">
