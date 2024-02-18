@@ -9,27 +9,27 @@ const questions = [
     { 
       id: '2',
       questionText: 'Rewrite the unscrambled sentence below. (Keep in mind capital letters and proper punctuation)',
-      answerText: ''
+      answerText: 'The flowers bloomed beautifully in the garden.'
     },
     { 
         id: '3',
         questionText: 'Rewrite the unscrambled sentence below. (Keep in mind capital letters and proper punctuation)',
-        answerText: 'The flowers bloomed beautifully in the garden.'
+        answerText: 'The sun is shining brightly in the clear blue sky.'
     },
     { 
       id: '4',
       questionText: 'Rewrite the unscrambled sentence below. (Keep in mind capital letters and proper punctuation)',
-      answerText: ''
+      answerText: "Hong Kong's vibant street lights lit up the entire city at night."
     },
     { 
         id: '5',
         questionText: 'Rewrite the unscrambled sentence below. (Keep in mind capital letters and proper punctuation)',
-        answerText: 'The sun is shining brightly in the clear blue sky.'
+        answerText: "Look out the window! It's raining heavily outside, with thunder rumbling in the distance."
     },
     { 
       id: '6',
       questionText: 'Rewrite the unscrambled sentence below. (Keep in mind capital letters and proper punctuation)',
-      answerText: ''
+      answerText: 'Last weekend, we had a wonderful time at the park, enjoying picnics and playing games.'
     },
     { 
         id: '7',
@@ -55,7 +55,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     videos.forEach((video, index) => {
       video.addEventListener('ended', () => {
-        console.log('yo');
+        console.log('working');
         //const question = questions[index].question;
         const question = questions.find((q) => q.id == video.id);
         displayPopup(question);
@@ -139,4 +139,28 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
   function answerIncorrect(question) {
+    var scalar = 20;
+    var cross = confetti.shapeFromText({ text: '❌', scalar });
+    
+    var defaults = {
+      spread: 100, //spread 0, start velo 5, particle count 1
+      ticks: 100, //spread 100, start velo 25, particle count 5
+      gravity: 0.8,
+      decay: 0.94,
+      startVelocity: 25,
+      shapes: [cross],
+      scalar
+    };
+    
+    function shoot() {
+
+    
+      confetti({
+        ...defaults,
+        particleCount: 5,
+        flat: true
+      });
+    }
+    
+    setTimeout(shoot, 0);
   }
