@@ -1455,6 +1455,7 @@ p.uppercase, .p.uppercase,
   background-size: cover;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  background-repeat: no-repeat;
 }
 
 .slide .background iframe,

@@ -119,7 +119,7 @@
       </ul>
     </div>
     <div class="right"><a class="button rounded khaki gradient" href="#">Our Mission</a>
-    <a class="button rounded blueGray gradient" href="mailto:khannr1@rchk.edu.hk">Contact us</a> <!-- change email to astralis email -->
+    <a class="button rounded blueGray gradient" href="mailto:astralis@rchk.edu.hk">Contact us</a> 
     </div>
   </div>
   <div class="sections compact hidden">
@@ -137,6 +137,7 @@
       <li><a href="index.html">Home Page</a></li>
       <li><a href="dyslexia_simulation.html">Dyslexia Simulation</a></li>
       <li><a href="adhd_simulation.html">ADHD Simulation</a></li>
+    </ul>
       <ul class="social opacity-8">
         <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use></svg></a></li>
         <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></a></li>
@@ -146,7 +147,7 @@
   </nav>
 
 <!-- ADHD Simulation Page-->
-<section class="slide"> <!-- bg brightness [-3] and transition -->
+<section class="slide kenBurns"> <!-- bg brightness [-3] and transition -->
     <div class="content"> 
       <div class="container"> 
         <div class="wrap"> 
@@ -154,28 +155,47 @@
             <ul class="grid">
               <li class="col-6-12 left">
                 <h1 class="ae-2 fromLeft" style = "font-family:serif">The ADHD Simulation</h1>
-                <p class="ae-3 fromLeft"><span class="opacity-8">Pay attention to the five sentences shown on screen. A question will be asked regarding one of the sentences. Quickest player to answer moves 3 spaces forward, second moves 2 spaces. </span></p>
+                <p class="ae-3 fromLeft"><span class="opacity-8">Pay attention to the five sentences shown on screen. A question will be asked regarding one of the sentences once the video has ended.</span></p>
+                <p class="h3 ae-3 fromLeft">(Users on smaller devices may need to scroll down to view the question).</p>
                 <ul class="tabs controller uppercase bold ae-4 fromCenter" data-slider-id="60-1">
                   <li class= "selected">Game 1 (Easy)</li>
                   <li>Game 2 (Easy)</li>
                   <li>Game 3 (Intermediate)</li>
+                  <li>Game 4 (Intermediate)</li>
+                  <li>Game 5 (Advanced)</li>
+                  <li>Game 6 (Advanced)</li>
                 </ul>
               </li>
               <li class="col-6-12 left ae-5 fromCenter">
                 <ul class="slider animated margin-top-4" data-slider-id="60-1">
                   <li class="selected fromCenter">
-                    <div class="popupTrigger videoThumbnail shadow rounded" data-popup-id="60-1">
-                      <img class ="wide" src="assets/Astralis_Thumbnails/6-min.png" alt="Video Thumbnail"/>
+                    <div class="popupTrigger videoThumbnail rounded" data-popup-id="60-1">
+                      <img class ="wide" src="assets/Astralis_Thumbnails/7-min.png" alt="Video Thumbnail"/>
                     </div>
                   </li>
                   <li class="fromCenter">
-                    <div class="popupTrigger videoThumbnail shadow rounded" data-popup-id="60-2">
-                      <img class="wide" src="assets/Astralis_Thumbnails/7-min.png" alt="Video Thumbnail"/>
-                    </div>
-                  </li>
-                  <li class="fromCenter">
-                    <div class="popupTrigger videoThumbnail shadow rounded" data-popup-id="60-3">
+                    <div class="popupTrigger videoThumbnail rounded" data-popup-id="60-2">
                       <img class="wide" src="assets/Astralis_Thumbnails/8-min.png" alt="Video Thumbnail"/>
+                    </div>
+                  </li>
+                  <li class="fromCenter">
+                    <div class="popupTrigger videoThumbnail rounded" data-popup-id="60-3">
+                      <img class="wide" src="assets/Astralis_Thumbnails/9-min.png" alt="Video Thumbnail"/>
+                    </div>
+                  </li>
+                  <li class="fromCenter">
+                    <div class="popupTrigger videoThumbnail rounded" data-popup-id="60-4">
+                      <img class="wide" src="assets/Astralis_Thumbnails/10-min.jpeg" alt="Video Thumbnail"/>
+                    </div>
+                  </li>
+                  <li class="fromCenter">
+                    <div class="popupTrigger videoThumbnail rounded" data-popup-id="60-5">
+                      <img class="wide" src="assets/Astralis_Thumbnails/11-min.jpeg" alt="Video Thumbnail"/>
+                    </div>
+                  </li>
+                  <li class="fromCenter">
+                    <div class="popupTrigger videoThumbnail rounded" data-popup-id="60-6">
+                      <img class="wide" src="assets/Astralis_Thumbnails/12-min.jpeg" alt="Video Thumbnail"/>
                     </div>
                   </li>
                 </ul>
@@ -188,7 +208,29 @@
     <div class="background" style="background-image:url(assets/img/background/mainbg.png)"></div>
   </section>
 
-<!-- Id 4 video -->
+<div id="popup-container">
+  <div id="question"><p>Type the unscrambled sentence below. (Keep in mind capital letters and proper punctuation)</p></div>
+    <div id="input-container">
+          <input type="text" id="answer-input" placeholder="Enter your answer">
+          <div class="button-container">
+              <a class="button rounded AstBlue gradient" id="submit-btn">Submit Answer</a>
+              <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+              <a class="button rounded AstYellow gradient" id="close-btn">Close Popup</a>
+          </div>
+    </div>
+  </div>
+
+<div id="horizontal-popup-container">
+  <div id="question"><p>Turn your device horizontally for best experience</p></div>
+    <div class = "button-container">
+      <a onclick = "closePopupHorizontal()" class="button rounded AstBlue gradient">Close Popup</a>
+    </div>
+</div>
+<script src="questions-ref/questions-script.js"></script>
+
+
+
+<!-- ADHD Easy 1 video -->
 <div class="container">
   <div class="popup autoplay" data-popup-id="60-1">
     <div class="close" onclick="togglePopup()">&times;</div>
@@ -197,7 +239,7 @@
         <div class="wrap">
           <div class="fix-10-12">
             <div class="embedVideo popupContent">
-              <video id="4" class="question-video" controls>
+              <video id="7" class="question-video" controls>
                 <source src="assets/Astralis_MP4/ADHD_P1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
@@ -209,7 +251,7 @@
   </div>
 </div>
   
-  <!-- Id 5 video -->
+  <!-- ADHD Easy 2 video -->
 <div class="container">
   <div class="popup autoplay" data-popup-id="60-2">
     <div class="close" onclick="togglePopup()">&times;</div>
@@ -218,7 +260,7 @@
         <div class="wrap">
           <div class="fix-10-12">
             <div class="embedVideo popupContent">
-              <video id="5" class="question-video" controls>
+              <video id="8" class="question-video" controls>
                 <source src="assets/Astralis_MP4/ADHD_P2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
@@ -231,7 +273,7 @@
 </div>
   
   
-  <!-- Id 6 video -->
+  <!-- ADHD Intermediate 1 video -->
 <div class="container">
   <div class="popup autoplay" data-popup-id="60-3">
     <div class="close" onclick="togglePopup()">&times;</div>
@@ -240,7 +282,7 @@
         <div class="wrap">
           <div class="fix-10-12">
             <div class="embedVideo popupContent">
-              <video id="6" class="question-video" controls>
+              <video id="9" class="question-video" controls>
                 <source src="assets/Astralis_MP4/ADHD_P3.mp4" type="video/mp4">
               </video>
             </div>
@@ -251,20 +293,83 @@
   </div>
 </div>
 
-    <div id="popup-container">
-      <div id="question"><p>Question goes here</p></div>
-      <div id="input-container">
-          <input type="text" id="answer-input" placeholder="Enter your answer">
-          <div class="button-container">
-              <a class="button rectangular AstBlue gradient" id="submit-btn">Submit Answer</a>
-              <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
-              <a class="button rectangular AstYellow gradient" id="close-btn">Close Popup</a>
+  <!-- ADHD Intermediate 2 video -->
+<div class="container">
+  <div class="popup autoplay" data-popup-id="60-4">
+    <div class="close" onclick="togglePopup()">&times;</div>
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="fix-10-12">
+            <div class="embedVideo popupContent">
+              <video id="10" class="question-video" controls>
+                <source src="assets/Astralis_MP4/ADHD_P4.mp4" type="video/mp4">
+              </video>
+            </div>
           </div>
+        </div>
+      </div>
     </div>
   </div>
-<script src="questions-ref/questions-script.js"></script>
+</div>
+
+  <!-- ADHD Advanced 1 video -->
+<div class="container">
+  <div class="popup autoplay" data-popup-id="60-5">
+    <div class="close" onclick="togglePopup()">&times;</div>
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="fix-10-12">
+            <div class="embedVideo popupContent">
+              <video id="11" class="question-video" controls>
+                <source src="assets/Astralis_MP4/ADHD_P5.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- ADHD Advanced 2 video -->
+<div class="container">
+  <div class="popup autoplay" data-popup-id="60-6">
+    <div class="close" onclick="togglePopup()">&times;</div>
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="fix-10-12">
+            <div class="embedVideo popupContent">
+              <video id="12" class="question-video" controls>
+                <source src="assets/Astralis_MP4/ADHD_P6.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
+<script>
+  function closePopupHorizontal() {
+    horizontalPopupContainer.style.display = 'none';
+  }
+ </script> 
+
+
+
+<script>
+  function closePopup() {
+    popupContainer.style.display = 'none'; 
+  }
+
+  closePopup()
+ </script> 
+ 
 
 
 <!-- Panel Bottom #01 -->
