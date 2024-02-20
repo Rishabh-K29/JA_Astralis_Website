@@ -33,18 +33,33 @@ const questions = [
     },
     { 
         id: '7',
-        questionText: 'Rewrite the sentence displayed in red. (Keep in mind capital letters and proper punctuation)',
-        answerText: 'Childhood memories bring immense joy.'
-    },
-    { 
-        id: '8',
-        questionText: 'Rewrite the sentence displayed in red. (Keep in mind capital letters and proper punctuation)',
+        questionText: 'Rewrite the sentence displayed in lime green. (Keep in mind capital letters and proper punctuation)',
         answerText: 'The flowers bloomed beautifully in the garden.'
     },
     { 
+        id: '8',
+        questionText: 'Rewrite the sentence written in the smallest font. (Keep in mind capital letters and proper punctuation)',
+        answerText: 'Childhood memories bring immense joy.'
+    },
+    { 
         id: '9',
-        questionText: 'Rewrite the sentence displayed in cursive font. (Keep in mind capital letters and proper punctuation)',
-        answerText: 'Last weekend, we had a wonderful time at the park, enjoying picnics and playing games.'
+        questionText: 'Rewrite the sentence displayed in bold. (Keep in mind capital letters and proper punctuation)',
+        answerText: 'After school, he eagerly heads to the football field every afternoon to practice and play with his teammates.'
+    },
+    { 
+        id: '10',
+        questionText: 'Rewrite the sentence displayed in pink. (Keep in mind capital letters and proper punctuation)',
+        answerText: 'The sun is shining brightly in the clear blue sky.'
+    },
+    { 
+        id: '11',
+        questionText: 'Rewrite the sentence displayed furthest on the right. (Keep in mind capital letters and proper punctuation)',
+        answerText: 'The contented purring of the cat can be heard as it peacefully sleeps on the warm cushion.'
+    },
+    { 
+        id: '12',
+        questionText: 'Rewrite the sentence displayed in the color most similar to the background. (Keep in mind capital letters and proper punctuation)',
+        answerText: "With every brushstroke, the artist's masterpiece comes to life, each stroke meticulously placed to convey emotion, evoke a sense of awe, and transport the observer to a world of imagination."
     },
 ]
 
