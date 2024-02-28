@@ -155,14 +155,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
   function answerIncorrect(question) {
     var scalar = 20;
-    var cross = confetti.shapeFromText({ text: '❌', scalar });
+    var cross = confetti.shapeFromText({ text: 'Nice Try!', scalar });
     
     var defaults = {
-      spread: 100, //spread 0, start velo 5, particle count 1
+      spread: 0, //spread 0, start velo 5, particle count 1
       ticks: 100, //spread 100, start velo 25, particle count 5
       gravity: 0.8,
       decay: 0.94,
-      startVelocity: 25,
+      startVelocity: 5,
       shapes: [cross],
       scalar
     };
@@ -172,7 +172,7 @@ window.addEventListener('DOMContentLoaded', () => {
     
       confetti({
         ...defaults,
-        particleCount: 5,
+        particleCount: 1,
         flat: true
       });
     }
