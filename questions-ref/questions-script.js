@@ -81,6 +81,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  const videoPopup = document.getElementById('video-container')
   const popupContainer = document.getElementById('popup-container');
   const horizontalPopupContainer = document.getElementById('horizontal-popup-container')
   const questionElement = document.getElementById('question');
@@ -98,6 +99,10 @@ window.addEventListener('DOMContentLoaded', () => {
   
   function closePopup() {
     popupContainer.style.display = 'none'; // hide the popup
+  }
+
+  function closeVideo() {
+    videoPopup.style.display = 'none';
   }
 
   submitButton.addEventListener('click', () => {
