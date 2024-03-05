@@ -155,14 +155,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
   function answerIncorrect(question) {
     var scalar = 20;
-    var cross = confetti.shapeFromText({ text: 'Nice Try!', scalar });
+    var cross = confetti.shapeFromText({ text: 'Good Try!', scalar, color: '#f6dea8' }); //darker colors work better
     
     var defaults = {
       spread: 0, //spread 0, start velo 5, particle count 1
-      ticks: 100, //spread 100, start velo 25, particle count 5
+      ticks: 120, //spread 100, start velo 25, particle count 5
       gravity: 0.8,
-      decay: 0.94,
-      startVelocity: 5,
+      decay: 0.95,
+      startVelocity: 10,
       shapes: [cross],
       scalar
     };
