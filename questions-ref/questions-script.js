@@ -19,7 +19,7 @@ const questions = [
     { 
       id: '4',
       questionText: 'Rewrite the unscrambled sentence below. (Keep in mind capital letters and proper punctuation)',
-      answerText: "Hong Kong's vibant street lights lit up the entire city at night."
+      answerText: "Hong Kong's vibrant street lights lit up the entire city at night."
     },
     { 
         id: '5',
